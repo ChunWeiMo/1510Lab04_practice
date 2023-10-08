@@ -1,6 +1,6 @@
 def prime(number):
     """
-    Calculate factorial.
+    Check prime number.
 
     A simple function that check if a positive integer is prime.
 
@@ -27,5 +27,9 @@ def prime(number):
     return is_prime
 
 
-if __name__ == "__main__":
+def main():
     print(prime(53))
+
+
+if __name__ == "__main__":
+    main()
