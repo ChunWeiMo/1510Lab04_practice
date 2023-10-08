@@ -13,9 +13,13 @@ def base_convert(base_10_number, destination_base):
         digit_to_concatenate = base_10_number % destination_base
         converted_number = str(digit_to_concatenate) + converted_number
         base_10_number //= destination_base
-    
+
     return int(converted_number)
 
+
+def main():
+    print(base_convert(9487, 7))
+
+
 if __name__ == "__main__":
-    print(base_convert(9487,7))
- 
+    main()
