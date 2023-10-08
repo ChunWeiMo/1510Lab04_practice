@@ -1,13 +1,16 @@
 def prime(number):
     """
-    Check prime number.
-
-    A simple function that check if a positive integer is prime.
+    Verify whether this positive integer is a prime number.
 
     :param number: a positive integer
     :precondition: number must be a positive integer greater than 1
-    :postcondition: check number
-    :return: a boolean 
+    :postcondition: verify whether this positive integer is a prime number
+    :return: a boolean to indicate whether this integer is a prime number
+    
+    >>> prime(7)
+    True
+    >>> prime(21)
+    False
     """
 
     divisor = 2
@@ -28,8 +31,10 @@ def prime(number):
 
 
 def main():
-    print(prime(53))
-
+    print("2 is prime", prime(2))
+    print("53 is prime", prime(53))
+    print("81 is prime", prime(81))
+    
 
 if __name__ == "__main__":
     main()
